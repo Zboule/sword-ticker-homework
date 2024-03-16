@@ -1,0 +1,45 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.table td {
+    border: none;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    padding-right: 30px;
+    text-align: left;
+}
+
+.fileDownloader button {
+    margin: 10px 0;
+    padding: 5px 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header button {
+    margin: 10px 0;
+    padding: 5px 15px;
+}
+
+.selectAll {
+    padding: 8px;
+    min-width: 150px;
+    font-size: 20px;
+}
+
+.selectAll input {
+    margin-right: 10px;
+}

@@ -2,6 +2,14 @@
 
 [View the deployed story book](http://localhost:6006/?path=/docs/components-filedownloader--docs)
 
+## Setup
+
+```
+git clone https://github.com/Zboule/sword-ticker-homework.git
+cd sword-ticker-homework
+npm install
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,23 +1,27 @@
-.trNormal {
-    background-color: transparend;
+/* Row background color */
+
+.tr,
+.trSelected {
+    transition: background-color 0.3s ease;
+}
+
+.tr {
+    background-color: transparent;
 }
 
 .trSelected {
     background-color: lightblue;
 }
 
-.trNormal,
-.trSelected {
-    transition: background-color 0.3s ease;
-}
-
-.trNormal:hover {
+.tr:hover {
     background-color: rgb(188, 188, 188);
 }
 
 .trSelected:hover {
     background-color: rgb(85, 175, 205);
 }
+
+/* Status icons */
 
 .availableIcon,
 .scheduledIcon {

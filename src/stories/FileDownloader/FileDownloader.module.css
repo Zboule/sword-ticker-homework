@@ -1,6 +1,15 @@
+/* Table */
+
 .table {
     width: 100%;
     border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    padding-right: 30px;
+    text-align: left;
 }
 
 .table th {
@@ -12,12 +21,8 @@
     border: none;
 }
 
-.table th,
-.table td {
-    padding: 8px;
-    padding-right: 30px;
-    text-align: left;
-}
+/* Columns min width */
+
 .checkbox {
     min-width: 30px;
 }
@@ -37,6 +42,8 @@
     min-width: 80px;
     padding-left: 20px;
 }
+
+/* Header */
 
 .fileDownloader button {
     margin: 10px 0;

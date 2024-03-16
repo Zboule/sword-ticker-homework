@@ -18,8 +18,23 @@
     padding-right: 30px;
     text-align: left;
 }
+.checkbox {
+    min-width: 30px;
+}
+.name {
+    min-width: 80px;
+}
+
+.device {
+    min-width: 80px;
+}
+
+.path {
+    min-width: 450px;
+}
 
 .status {
+    min-width: 80px;
     padding-left: 20px;
 }
 

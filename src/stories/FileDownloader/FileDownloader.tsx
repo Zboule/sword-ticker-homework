@@ -43,6 +43,7 @@ export const FileDownloader: React.FC<FileDownloaderProps> = ({ files }) => {
             ref={selectAllRef}
             checked={isAllSelected}
             onChange={selectAll}
+            disabled={files.length === 0}
           />
           {selectedFiles.size > 0
             ? `Selected ${selectedFiles.size}`
@@ -61,12 +62,20 @@ export const FileDownloader: React.FC<FileDownloaderProps> = ({ files }) => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Device</th>
-            <th>Path</th>
             <th>
-              <span className={styles.status}>Status</span>
+              <div className={styles.checkbox}></div>
+            </th>
+            <th>
+              <div className={styles.name}>Name</div>
+            </th>
+            <th>
+              <div className={styles.device}>Device</div>
+            </th>
+            <th>
+              <div className={styles.path}>Path</div>
+            </th>
+            <th>
+              <div className={styles.status}>Status</div>
             </th>
           </tr>
         </thead>

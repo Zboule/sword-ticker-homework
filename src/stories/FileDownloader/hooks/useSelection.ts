@@ -5,7 +5,8 @@ export const useSelection = (files: File[]) => {
   const [selectedFiles, setSelectedFiles] = useState<Set<File>>(new Set());
 
   const availableFiles = files.filter((file) => file.status === "available");
-  const isAllSelected = selectedFiles.size === availableFiles.length;
+  const isAllSelected =
+    availableFiles.length > 0 && selectedFiles.size === availableFiles.length;
   const isSomeSelected =
     selectedFiles.size > 0 && selectedFiles.size < availableFiles.length;
 

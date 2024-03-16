@@ -24,6 +24,7 @@ export const FileRow: React.FC<FileRowProps> = ({
     <tr className={`${isSelected ? styles.trSelected : styles.trNormal}`}>
       <td>
         <input
+          data-testid="download-checkbox"
           type="checkbox"
           checked={isSelected}
           onChange={onClickRow}

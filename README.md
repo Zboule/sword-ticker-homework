@@ -1,6 +1,8 @@
 # Sword ticker homework
 
-[View the deployed story book](http://localhost:6006/?path=/docs/components-filedownloader--docs)
+## Result
+
+View the live version deployed as a github page [here](https://zboule.github.io/sword-ticker-homework/?path=/docs/components-filedownloader--docs)
 
 ## Setup
 

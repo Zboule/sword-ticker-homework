@@ -1,0 +1,123 @@
+/* Table */
+
+.FileDownloader_table__jp4sU {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.FileDownloader_table__jp4sU th,
+.FileDownloader_table__jp4sU td {
+    padding: 8px;
+    padding-right: 30px;
+    text-align: left;
+}
+
+.FileDownloader_table__jp4sU th {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.FileDownloader_table__jp4sU td {
+    border: none;
+}
+
+/* Columns min width */
+
+.FileDownloader_checkbox__IDlLo {
+    min-width: 30px;
+}
+.FileDownloader_name__9tdj\+ {
+    min-width: 80px;
+}
+
+.FileDownloader_device__Yj6gq {
+    min-width: 80px;
+}
+
+.FileDownloader_path__FHMMw {
+    min-width: 450px;
+}
+
+.FileDownloader_status__u84iQ {
+    min-width: 80px;
+    padding-left: 20px;
+}
+
+/* Header */
+
+.FileDownloader_header__0PWC8 {
+    display: flex;
+    align-items: center;
+}
+
+.FileDownloader_header__0PWC8 img {
+    height: 21px;
+}
+
+.FileDownloader_header__0PWC8 button {
+    margin: 10px 0;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.FileDownloader_downloadIconDisabled__2LN4q {
+    opacity: 40%;
+}
+
+.FileDownloader_selectAll__RyZbV {
+    padding: 8px;
+    min-width: 150px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.FileDownloader_selectAll__RyZbV input {
+    margin-right: 10px;
+}
+
+/* Row background color */
+
+.FileRow_tr__b8cFY,
+.FileRow_trSelected__ww1vi {
+    transition: background-color 0.3s ease;
+}
+
+.FileRow_tr__b8cFY {
+    background-color: transparent;
+}
+
+.FileRow_trSelected__ww1vi {
+    background-color: lightblue;
+}
+
+.FileRow_tr__b8cFY:hover {
+    background-color: rgb(188, 188, 188);
+}
+
+.FileRow_trSelected__ww1vi:hover {
+    background-color: rgb(85, 175, 205);
+}
+
+/* Status icons */
+
+.FileRow_availableIcon__R4sBu,
+.FileRow_scheduledIcon__b9EA0 {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin-bottom: -3px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.FileRow_availableIcon__R4sBu {
+    background-color: rgb(78, 204, 78);
+}
+.FileRow_scheduledIcon__b9EA0 {
+    visibility: none;
+}
+
+
+/*# sourceMappingURL=stories-FileDownloader-FileDownloader-stories.183ded9b.chunk.css.map*/

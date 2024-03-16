@@ -3,6 +3,7 @@ import type { File } from "./models/model";
 import styles from "./FileDownloader.module.css";
 import { FileRow } from "./components/FileRow";
 import { useSelection } from "./hooks/useSelection";
+import downloadIcon from "./assets/icon-download.png";
 
 interface FileDownloaderProps {
   files: File[];
@@ -13,6 +14,7 @@ export const FileDownloader: React.FC<FileDownloaderProps> = ({ files }) => {
     selectedFiles,
     isAllSelected,
     isSomeSelected,
+    isAnySelected,
     toggleSelection,
     selectAll,
   } = useSelection(files);
@@ -45,16 +47,19 @@ export const FileDownloader: React.FC<FileDownloaderProps> = ({ files }) => {
             onChange={selectAll}
             disabled={files.length === 0}
           />
-          {selectedFiles.size > 0
-            ? `Selected ${selectedFiles.size}`
-            : "None Selected"}
+          {isAnySelected ? `Selected ${selectedFiles.size}` : "None Selected"}
         </div>
 
         <button
           className={styles.downloadButton}
           onClick={downloadSelected}
-          disabled={selectedFiles.size === 0}
+          disabled={!isAnySelected}
         >
+          <img
+            src={downloadIcon}
+            alt="download-icon"
+            className={!isAnySelected ? styles.downloadIconDisabled : ""}
+          />
           Download Selected
         </button>
       </div>

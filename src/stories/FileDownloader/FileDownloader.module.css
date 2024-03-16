@@ -45,19 +45,25 @@
 
 /* Header */
 
-.fileDownloader button {
-    margin: 10px 0;
-    padding: 5px 15px;
-}
-
 .header {
     display: flex;
     align-items: center;
 }
 
+.header img {
+    height: 21px;
+}
+
 .header button {
     margin: 10px 0;
-    padding: 5px 15px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.downloadIconDisabled {
+    opacity: 40%;
 }
 
 .selectAll {

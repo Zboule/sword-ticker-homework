@@ -7,6 +7,7 @@ export const useSelection = (files: File[]) => {
   const availableFiles = files.filter((file) => file.status === "available");
   const isAllSelected =
     availableFiles.length > 0 && selectedFiles.size === availableFiles.length;
+  const isAnySelected = selectedFiles.size > 0;
   const isSomeSelected =
     selectedFiles.size > 0 && selectedFiles.size < availableFiles.length;
 
@@ -33,6 +34,7 @@ export const useSelection = (files: File[]) => {
   return {
     selectedFiles,
     isAllSelected,
+    isAnySelected,
     isSomeSelected,
     toggleSelection,
     selectAll,

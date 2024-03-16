@@ -19,6 +19,10 @@
     text-align: left;
 }
 
+.status {
+    padding-left: 20px;
+}
+
 .fileDownloader button {
     margin: 10px 0;
     padding: 5px 15px;
@@ -37,7 +41,8 @@
 .selectAll {
     padding: 8px;
     min-width: 150px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .selectAll input {

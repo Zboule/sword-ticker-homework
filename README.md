@@ -2,7 +2,6 @@
 
 [View the deployed story book](https://zboule.github.io/sword-ticker-homework/)
 
-
 ## Available Scripts
 
 In the project directory, you can run:

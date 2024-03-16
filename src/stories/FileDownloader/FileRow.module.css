@@ -18,3 +18,20 @@
 .trSelected:hover {
     background-color: rgb(85, 175, 205);
 }
+
+.availableIcon,
+.scheduledIcon {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin-bottom: -3px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.availableIcon {
+    background-color: rgb(78, 204, 78);
+}
+.scheduledIcon {
+    visibility: none;
+}

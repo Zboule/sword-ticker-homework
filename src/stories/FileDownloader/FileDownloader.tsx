@@ -25,17 +25,13 @@ export const FileDownloader: React.FC<FileDownloaderProps> = ({ files }) => {
   }, [isSomeSelected]);
 
   const downloadSelected = () => {
-    const selectedFileDetails = Array.from(selectedFiles).map(
-      (fileName) => files.find((file) => file.name === fileName) as File
-    );
+    const selectedFileDetails = Array.from(selectedFiles)
+      .map((file) => {
+        return `${file.device} - ${file.path}`;
+      })
+      .join("\n");
 
-    alert(
-      JSON.stringify(
-        selectedFileDetails.map(({ path, device }) => ({ path, device })),
-        null,
-        2
-      )
-    );
+    alert(selectedFileDetails);
   };
 
   return (
@@ -69,7 +65,9 @@ export const FileDownloader: React.FC<FileDownloaderProps> = ({ files }) => {
             <th>Name</th>
             <th>Device</th>
             <th>Path</th>
-            <th>Status</th>
+            <th>
+              <span className={styles.status}>Status</span>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -77,7 +75,7 @@ export const FileDownloader: React.FC<FileDownloaderProps> = ({ files }) => {
             <FileRow
               key={file.name}
               file={file}
-              isSelected={selectedFiles.has(file.path)}
+              isSelected={selectedFiles.has(file)}
               onSelectionChange={(file) => {
                 console.log("From here");
                 toggleSelection(file);

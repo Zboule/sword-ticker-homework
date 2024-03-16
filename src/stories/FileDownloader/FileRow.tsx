@@ -33,7 +33,12 @@ export const FileRow: React.FC<FileRowProps> = ({
       <td>{file.name}</td>
       <td>{file.device}</td>
       <td>{file.path}</td>
-      <td>{file.status}</td>
+      <td>
+        <span
+          className={isAvailable ? styles.availableIcon : styles.scheduledIcon}
+        ></span>
+        {file.status}
+      </td>
     </tr>
   );
 };

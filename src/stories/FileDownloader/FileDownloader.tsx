@@ -91,7 +91,6 @@ export const FileDownloader: React.FC<FileDownloaderProps> = ({ files }) => {
               file={file}
               isSelected={selectedFiles.has(file)}
               onSelectionChange={(file) => {
-                console.log("From here");
                 toggleSelection(file);
               }}
             />

@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import type { File } from "./model";
+import type { File } from "../models/model";
 
 export const useSelection = (files: File[]) => {
   const [selectedFiles, setSelectedFiles] = useState<Set<File>>(new Set());

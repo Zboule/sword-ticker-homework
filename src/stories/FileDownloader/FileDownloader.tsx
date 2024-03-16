@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import type { File } from "./model";
+import type { File } from "./models/model";
 import styles from "./FileDownloader.module.css";
-import { FileRow } from "./FileRow";
-import { useSelection } from "./useSelection";
+import { FileRow } from "./components/FileRow";
+import { useSelection } from "./hooks/useSelection";
 
 interface FileDownloaderProps {
   files: File[];

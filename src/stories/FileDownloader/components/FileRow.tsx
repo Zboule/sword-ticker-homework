@@ -1,5 +1,5 @@
 import styles from "./FileRow.module.css";
-import type { File } from "./model";
+import type { File } from "../models/model";
 
 interface FileRowProps {
   file: File;

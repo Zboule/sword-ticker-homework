@@ -1,5 +1,7 @@
 # Sword ticker homework
 
+[View the deployed story book](https://zboule.github.io/sword-ticker-homework/)
+
 
 ## Available Scripts
 
